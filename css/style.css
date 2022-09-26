@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display+SC:wght@400;700;900&display=swap");
 * {
   margin: 0;
@@ -58,7 +57,7 @@ ul {
   justify-content: none;
   align-items: none;
   flex-direction: column;
-  background-image: url("/asetts/img/BudínNaranja.png"); }
+  background-image: url("/asetts/img/TartaMzna.png"); }
   .header__pages .pagestitle h1 {
     margin: 10px;
     text-align: center;
@@ -139,7 +138,7 @@ ul {
 .hero {
   min-height: 100vh;
   max-height: 100%;
-  background-image: url("/asetts/img/Cookies1.jpg"); }
+  background-image: url("/asetts/img/FondoDDL.png"); }
   .hero__content {
     display: flex;
     justify-content: none;
