@@ -1,0 +1,70 @@
+.navbar {
+
+    .navbar-brand {
+        margin-right: 0;
+        padding: 0 2em;
+    
+        img {
+            width: 80px;
+            transition: all .3s;
+    
+            &:hover {
+                transform: $scalemin;
+            }
+        }
+    }
+
+    div {
+        .navbar-nav {
+            align-items: center;    
+            
+            .nav-item {
+
+                .nav-link {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.1em;
+                    padding: .5em 2em;
+                
+                    transition: all 0.3s;
+                
+                    &:hover {
+                        font-weight: 800;
+                        color: $primary;
+                    }                    
+
+                    img {
+                        transition: transfrom .3s;
+            
+                        &:hover {
+                            transform: $scalemin;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+// propiedades propias de header en pages.html (no index.html)
+
+.header__pages {
+    @extend .configImg;  
+    @include templateFlex (none, none, true);
+
+    
+    background-image: url("/asetts/img/BudínNaranja.png");
+     
+
+    .pagestitle h1 {
+        margin: 10px;
+    
+        text-align: center;
+        font-family: 'Playfair Display SC', serif;       
+        font-size: 2em;
+    }
+}
+
+
+

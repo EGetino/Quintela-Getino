@@ -1,0 +1,111 @@
+.prodmain {
+    @include templateFlex (space-around, none, fila);
+    padding: 40px;
+
+
+    .prodmenu {
+
+        &__categories {
+            margin-top: 40px;
+            
+            &-list {
+                li {
+                    margin-top: 10px;
+    
+                    a {
+                        &:hover {
+                            font-weight: bold;
+                    
+                            // uso de map-get
+                            color: map-get($map: $palette, $key:secondary );
+                            // color: black;
+                            
+                        }
+                    }
+    
+                    
+                }
+
+            }
+    
+        }
+    }
+    
+}
+
+
+.products {    
+    display: flex;
+    flex-direction: column; 
+
+    &__cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 30px;    
+    }
+
+    .cards{
+        background-color: white;
+        padding: 20px;
+        width: 250px;
+        border: 1px solid $primary;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px $primary;
+    
+        transition: all 0.3s;
+
+        &:hover {
+            transform: $scalemin;
+        }
+
+        .card__header{
+            position: relative;
+            z-index: 1;
+
+            &-img{
+                width: 100%;
+                border: 3px solid $primary;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .card__title{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card__link{
+
+            width: 100%;
+            padding: 15px 0;    
+            font-size: 1em;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            
+            color: black;
+            background-color: #fcfcfc;    
+            border: solid 1px grey;
+            border-radius: 5px; 
+        
+            display: inline-block;       
+            cursor: pointer;
+        
+            transition: all 0.3s;
+    
+            &:hover {              
+                color: black;
+                font-weight: 500;
+                
+                // uso de map-get
+                background-color: map-get($map: $palette, $key:primary );
+                // background-color: $primary;
+            }
+        }
+    }
+   
+}
+
+
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display+SC:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display SC', serif; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.whatsapp { 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+
+    img {
+        transition: all 0.3s; 
+
+        &:hover {
+            transform: $scalemin;
+        }
+    }
+}
+
+// extend
+.configImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+
+
+// mixin
+
+@mixin templateFlex ($valueJustify, $alignItems, $flex-direction) {
+    display: flex;
+    justify-content: $valueJustify;
+    align-items: $alignItems ;
+
+    @if ($flex-direction == true) {
+        flex-direction: column;
+    } @else if ($flex-direction == fila) {
+        flex-direction: row;
+    }
+    
+}
+
+// map
+
+$palette: (
+    primary: $primary,
+    secondary: rgb(143, 200, 238),
+    therd:rgb(129, 238, 129)
+);
