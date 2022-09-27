@@ -24,7 +24,7 @@ ul {
     .whatsapp img:hover {
       transform: scale(1.1); }
 
-.configImg, .header__pages {
+.configImg, .header__pages, .hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -58,7 +58,7 @@ ul {
   justify-content: none;
   align-items: none;
   flex-direction: column;
-  background-image: url("/asetts/img/BudínNaranja.png"); }
+  background-image: url("../asetts/img/BudínNaranja.png"); }
   .header__pages .pagestitle h1 {
     margin: 10px;
     text-align: center;
@@ -139,10 +139,7 @@ ul {
 .hero {
   min-height: 100vh;
   max-height: 100%;
-  background-image: url("/asetts/img/Cookies1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  background-image: url(../asetts/img/Cookies1.jpg); }
   .hero__content {
     display: flex;
     justify-content: none;

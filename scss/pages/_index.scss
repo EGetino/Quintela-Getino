@@ -1,13 +1,11 @@
 
 .hero {
+    @extend .configImg; 
     
     min-height: 100vh;
     max-height: 100%;
 
-    background-image: url("/asetts/img/Cookies1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
+    background-image: url(../asetts/img/Cookies1.jpg);
 
     &__content {    
         @include templateFlex (none, center,true);
