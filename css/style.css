@@ -139,7 +139,7 @@ ul {
 .hero {
   min-height: 100vh;
   max-height: 100%;
-  background-image: url(../asetts/img/Cookies1.jpg); }
+  background-image: url("../asetts/img/Cookies1.jpg"); }
   .hero__content {
     display: flex;
     justify-content: none;
@@ -211,7 +211,7 @@ ul {
       margin-top: 10px; }
       .prodmain .prodmenu__categories-list li a:hover {
         font-weight: bold;
-        color: #8fc8ee; }
+        color: #ffc0cb; }
 
 .products {
   display: flex;
