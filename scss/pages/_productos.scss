@@ -17,7 +17,7 @@
                             font-weight: bold;
                     
                             // uso de map-get
-                            color: map-get($map: $palette, $key:secondary );
+                            color: map-get($map: $palette, $key:primary );
                             // color: black;
                             
                         }
