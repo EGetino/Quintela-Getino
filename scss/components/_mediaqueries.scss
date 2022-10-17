@@ -21,12 +21,9 @@
         display: none;
     }
 
-    .aboutus__main {        
+    .aboutus__main {
         display: flex;
-        flex-direction: column;         
-    }
-    .aboutus__main-img  img{
-        width: 250px;
+        flex-direction: column;
     }
 
 }
@@ -40,16 +37,17 @@
         display: none;
     }
 
-    // .aboutus__main-img img {
-    //     width: 450px;
-    // }
+    .aboutus__main-img img {
+        width: 450px;
+    }
+    
 }
 
 @media (max-width:480px) {
 
-    // .aboutus__main-img  img {
-    //     width: 350px;
-    // }
+    .aboutus__main-img img {
+        width: 350px;
+    }
 
     .hero_content h2 {
         font-size: 1rem;
